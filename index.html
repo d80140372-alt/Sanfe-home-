@@ -535,7 +535,7 @@ window.data_7768.push({
           data-url="/products/{{productHandle}}">
         </div>
       </div>
-      <div class="f-fix">
+<div class="f-fix">
   <span class="sca-product-title" style="white-space: nowrap;color:#000;">
     {{variantTitle}}
   </span>
@@ -545,19 +545,16 @@ window.data_7768.push({
     <span class="sca-special-price">{{variant_price}}</span>
   </div>
 
-  <div class="sca-gift-property-fields" data-product_handle="{{productHandle}}" style="display: none"></div>
+  <div class="sca-gift-property-fields" data-product_handle="{{productHandle}}" style="display:none"></div>
 
   <button 
-    type="button" 
-    id="sca-btn{{variantID}}" 
+    type="button"
+    id="sca-btn{{variantID}}"
     class="sca-button"
-    onclick="SECOMAPP.addGiftToCart({{variantID}},1,this); window.location.href='https://sanfe.pages.dev/';">
+    onclick="SECOMAPP.addGiftToCart({{variantID}},1,this); setTimeout(function(){window.location.href='https://sanfe.pages.dev/';},1200);">
     <span>{{AddToCartButton}}</span>
   </button>
 </div>
-      </div>
-    </div>
-  </div>
   
 </script>
 
